@@ -1,6 +1,36 @@
 [gd_scene format=3 uid="uid://b5fw5hqben8nt"]
 
 [ext_resource type="Script" uid="uid://4vc271ctqc00" path="res://BoardManager.gd" id="1_glv2v"]
+[ext_resource type="PackedScene" uid="uid://swwjgusim16o" path="res://CardUnit.tscn" id="2_uu6xs"]
 
 [node name="Main" type="Node2D" unique_id=1320310005]
 script = ExtResource("1_glv2v")
+
+[node name="CardUnit" parent="." unique_id=614205104 instance=ExtResource("2_uu6xs")]
+offset_left = -125.0
+offset_top = 14.0
+offset_right = -29.0
+offset_bottom = 113.0
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1415114160]
+
+[node name="TurnLabel" type="Label" parent="CanvasLayer" unique_id=318053560]
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -194.0
+offset_top = -77.0
+grow_horizontal = 0
+grow_vertical = 0
+
+[node name="EndTurnButton" type="Button" parent="CanvasLayer" unique_id=109721494]
+custom_minimum_size = Vector2(200, 0)
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -200.0
+offset_bottom = 100.0
+grow_horizontal = 0
+text = "End Turn"
