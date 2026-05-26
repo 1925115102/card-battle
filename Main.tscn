@@ -34,3 +34,15 @@ offset_left = -200.0
 offset_bottom = 100.0
 grow_horizontal = 0
 text = "End Turn"
+
+[node name="PlayerHandContainer" type="HBoxContainer" parent="CanvasLayer" unique_id=1313399426]
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -200.0
+offset_right = 800.0
+grow_vertical = 0
+
+[node name="EnemyHandContainer" type="HBoxContainer" parent="CanvasLayer" unique_id=2108823428]
+offset_right = 800.0
+offset_bottom = 200.0
